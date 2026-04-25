@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-sans);
+  --font-heading: var(--font-heading);
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: #000;
+}
+
+body {
+    background-color: #000;
+}
