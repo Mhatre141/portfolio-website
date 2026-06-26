@@ -64,18 +64,18 @@ export default function Contact() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               <div className="space-y-2">
                 <label className="text-sm font-medium text-gray-400 ml-1">Name</label>
-                <input type="text" className="w-full bg-[#050505] border border-white/10 rounded-2xl px-5 py-4 text-white focus:outline-none focus:border-[#7c3aed] transition-colors" placeholder="John Doe" />
+                <input type="text" suppressHydrationWarning className="w-full bg-[#050505] border border-white/10 rounded-2xl px-5 py-4 text-white focus:outline-none focus:border-[#7c3aed] transition-colors" placeholder="John Doe" />
               </div>
               <div className="space-y-2">
                 <label className="text-sm font-medium text-gray-400 ml-1">Email</label>
-                <input type="email" className="w-full bg-[#050505] border border-white/10 rounded-2xl px-5 py-4 text-white focus:outline-none focus:border-[#7c3aed] transition-colors" placeholder="john@example.com" />
+                <input type="email" suppressHydrationWarning className="w-full bg-[#050505] border border-white/10 rounded-2xl px-5 py-4 text-white focus:outline-none focus:border-[#7c3aed] transition-colors" placeholder="john@example.com" />
               </div>
             </div>
             <div className="space-y-2 mb-8">
               <label className="text-sm font-medium text-gray-400 ml-1">Message</label>
-              <textarea rows={5} className="w-full bg-[#050505] border border-white/10 rounded-2xl px-5 py-4 text-white focus:outline-none focus:border-[#7c3aed] transition-colors resize-none" placeholder="Tell me about your project..."></textarea>
+              <textarea rows={5} suppressHydrationWarning className="w-full bg-[#050505] border border-white/10 rounded-2xl px-5 py-4 text-white focus:outline-none focus:border-[#7c3aed] transition-colors resize-none" placeholder="Tell me about your project..."></textarea>
             </div>
-            <button className="w-full bg-white text-black font-bold py-4 rounded-2xl hover:bg-gray-200 transition-colors shadow-[0_4px_20px_rgba(255,255,255,0.2)]">
+            <button suppressHydrationWarning className="w-full bg-white text-black font-bold py-4 rounded-2xl hover:bg-gray-200 transition-colors shadow-[0_4px_20px_rgba(255,255,255,0.2)]">
               Send Message
             </button>
           </motion.form>

@@ -1,7 +1,7 @@
 "use client";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial } from "@react-three/drei";
-import { useRef, useMemo } from "react";
+import { useRef, useMemo, useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 function ParticleCloud(props: any) {
@@ -38,12 +38,19 @@ function ParticleCloud(props: any) {
 }
 
 export default function Hero() {
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   return (
     <section className="relative h-screen w-full bg-black overflow-hidden flex items-center justify-center pt-20">
       <div className="absolute inset-0 z-0 opacity-40">
-        <Canvas camera={{ position: [0, 0, 3] }}>
-          <ParticleCloud />
-        </Canvas>
+        {mounted && (
+          <Canvas camera={{ position: [0, 0, 3] }}>
+            <ParticleCloud />
+          </Canvas>
+        )}
       </div>
       
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto flex flex-col items-center">
