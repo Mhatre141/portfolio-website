@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const timeline = [
   {
-    year: "Present",
+    year: "April 2026 - June 2026",
     title: "Junior ML Engineer Intern",
     company: "Brightwave Software",
     description: "Working on ML engineering tasks including data processing, model development, and deployment of scalable solutions. Contributing to the development of the Anti Money Laundering (Cyber Statement Analyzer) project, focusing on transaction analysis and fraud detection. Collaborating with and guiding a small team to ensure smooth workflow, timely delivery, and efficient implementation of features."

@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 
 const skills = [
   { category: "Programming", items: ["Python", "SQL", "MySQL"] },
+  { category: "Web Development", items: ["HTML", "CSS", "React"] },
   { category: "Machine Learning", items: ["Regression", "Classification", "Clustering", "Random Forest", "GBM"] },
   { category: "Deep Learning", items: ["ANN", "CNN", "RNN"] },
   { category: "NLP", items: ["TF-IDF", "Sentiment Analysis", "Text Classification"] },

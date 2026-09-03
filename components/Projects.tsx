@@ -8,6 +8,11 @@ const projects = [
     tags: ["Machine Learning", "FastAPI", "Celery", "Redis", "Docker"],
   },
   {
+    title: "AI-Powered Clinical Safety Assistant & Voice Intelligence System",
+    description: "Analyzes patient conversations to identify health concerns, assess urgency, and provide immediate first-aid guidance. Captures voice input, converts to text, and uses Gemini LLM to extract issues, sentiment, and clinical risks.",
+    tags: ["Machine Learning", "Gen AI", "NLP", "Gemini API", "React"],
+  },
+  {
     title: "Rain Sense",
     description: "Built ML pipeline for weather forecasting using classification + regression models. Helps agriculture & travel planning.",
     tags: ["Python", "Pandas", "Scikit", "Random Forest"],
